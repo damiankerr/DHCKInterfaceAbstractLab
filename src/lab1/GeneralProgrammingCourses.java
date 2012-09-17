@@ -8,7 +8,7 @@ package lab1;
  *
  * @author Damian
  */
-abstract class GeneralProgrammingCourses {
+public abstract class GeneralProgrammingCourses {
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -24,12 +24,17 @@ abstract class GeneralProgrammingCourses {
         this.credits = credits;
         this.prerequisites = prerequisites;
     }
+    
+    
+    public abstract void information();
+    
 
     public String getCourseName() {
         return courseName;
     }
 
     public void setCourseName(String courseName) {
+        //Add Validation
         this.courseName = courseName;
     }
 
@@ -38,6 +43,7 @@ abstract class GeneralProgrammingCourses {
     }
 
     public void setCourseNumber(String courseNumber) {
+        //Add Validation
         this.courseNumber = courseNumber;
     }
 
@@ -46,6 +52,7 @@ abstract class GeneralProgrammingCourses {
     }
 
     public void setCredits(double credits) {
+        //Add Validation
         this.credits = credits;
     }
 
@@ -54,6 +61,7 @@ abstract class GeneralProgrammingCourses {
     }
 
     public void setPrerequisites(String prerequisites) {
+        //Add Validation
         this.prerequisites = prerequisites;
     }
     
